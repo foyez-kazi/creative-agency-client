@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const baseUrl = 'http://localhost:3001/api'
+export const baseUrl = 'https://foyez-creative-agency.herokuapp.com/api'
 
 const getReviews = () => {
   const request = axios.get(`${baseUrl}/reviews`)

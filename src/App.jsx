@@ -6,7 +6,6 @@ import { NotFound } from './components/NotFound'
 import { Home } from './components/Home/Home'
 import { Login } from './components/Login'
 import { PrivateRoute } from './components/PrivateRoute'
-import { PrivateComponent } from './components/PrivateComponent'
 import { Order } from './components/Order/Order'
 import { ServiceList } from './components/Order/ServiceList'
 import { Review } from './components/Order/Review'
@@ -21,9 +20,6 @@ const App = () => {
         <Route path="/login">
           <Login />
         </Route>
-        <PrivateRoute path="/private">
-          <PrivateComponent />
-        </PrivateRoute>
         <PrivateRoute path="/orders">
           <Order />
         </PrivateRoute>
