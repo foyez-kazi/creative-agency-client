@@ -3,6 +3,7 @@ import { useHistory } from 'react-router-dom'
 
 import { UserContext } from '../context/UserProvider'
 import firebase, { signInWithPopup } from '../utils/firebase'
+import GoogleIcon from '../images/icons/google.png'
 
 export const GoogleAuth = ({ from }) => {
   const { setCurrentUser } = useContext(UserContext)
@@ -19,8 +20,24 @@ export const GoogleAuth = ({ from }) => {
   }
 
   return (
-    <div>
-      <button onClick={() => signInWithGoogle()}>Continue with Google</button>
-    </div>
+    <button
+      className="btn"
+      style={{
+        border: '1px solid #ccc',
+        borderRadius: '100px',
+        background: '#fff',
+        padding: '10px 50px',
+        position: 'relative',
+      }}
+      onClick={() => signInWithGoogle()}
+    >
+      <img
+        style={{ position: 'absolute', left: 8 }}
+        src={GoogleIcon}
+        alt="Google Icon"
+        width="20"
+      />
+      <span>Continue with Google</span>
+    </button>
   )
 }

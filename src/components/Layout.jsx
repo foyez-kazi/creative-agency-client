@@ -17,5 +17,5 @@ export const Layout = ({ children }) => {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
-  return <div>{children}</div>
+  return <>{children}</>
 }

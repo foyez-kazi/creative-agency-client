@@ -11,5 +11,9 @@ export const Logout = () => {
     history.replace('/')
   }
 
-  return <button onClick={handleLogout}>Logout</button>
+  return (
+    <button className="btn" onClick={handleLogout}>
+      Logout
+    </button>
+  )
 }
